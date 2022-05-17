@@ -1,0 +1,35 @@
+openapi: "3.0.0"
+info:
+  description: "Codegen for Competition manager - Competitions"
+  version: "0.0.1"
+  title: "Competition Manager - Competitions"
+paths:
+  /competitions:
+    get:
+      tags:
+        - competitions
+      summary: Retrieve all competitions
+      operationId: getCompetitions
+      responses:
+        200:
+          description: List of all competitions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Competition'
+components:
+  schemas:
+    Competition:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        name:
+          type: string
+          example: "Eredivisie"
+        countryCode:
+          type: String
+          example: "NL"
