@@ -5,7 +5,7 @@ import com.jeroenluers.pes.domain.models.CompetitionDto;
 import java.util.List;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 interface CompetitionMapper {
 
   Competition toCompetition(final CompetitionDto competitionDto);

@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20220518-02-inital-fill-table-competition
+      author: Jeroen Luers
+      comment: "Initial setup - fill table competition"
+      preConditions:
+        - onSqlOutput: TEST
+      changes:
+        - loadData:
+            tableName: competition
+            identityInsertEnabled: true
+            columns:
+              - column:
+                  header: name
+                  name: name
+                  type: string
+              - column:
+                  header: country_code
+                  name: country_code
+                  type: string
+            commentLineStartsWith: #
+            encoding: UTF-8
+            file: import/competition.csv
+            quotchar: '"'
+            relativeToChangelogFile: true
+            separator: ';'

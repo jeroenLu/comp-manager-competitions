@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20220518-01-create-table-competition
+      author: Jeroen Luers
+      comment: "Initial setup - creating table competition"
+      preConditions:
+        - onSqlOutput: TEST
+        - not:
+            - tableExists:
+                tableName: competition
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: competitionPK
+                  name: id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: country_code
+                  type: VARCHAR(3)
+            tableName: competition
