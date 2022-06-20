@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.jeroenluers</groupId>
     <artifactId>comp-manager-competitions</artifactId>
-    <version>0.0.4344</version>
+    <version>0.0.4345</version>
     <name>comp-manager-competitions</name>
     <description>Competition Manager - Competitions</description>
 
