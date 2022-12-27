@@ -30,6 +30,7 @@
         <springfox-version>2.9.2</springfox-version>
         <liquibase-version>4.10.0</liquibase-version>
         <!-- End third party dependencies -->
+             
     </properties>
 
     <dependencies>
