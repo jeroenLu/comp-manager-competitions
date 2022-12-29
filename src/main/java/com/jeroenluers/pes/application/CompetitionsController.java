@@ -17,7 +17,7 @@ public class CompetitionsController implements CompetitionsApiDelegate {
 
   @Override
   public ResponseEntity<List<Competition>> getCompetitions() {
-    
+
     return ResponseEntity.ok(
         competitionMapper.toCompetitions(getCompetionsUseCase.getCompetitions()));
   }
