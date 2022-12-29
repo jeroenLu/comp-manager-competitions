@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.jeroenluers</groupId>
     <artifactId>comp-manager-competitions</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.10</version>
     <name>comp-manager-competitions</name>
     <description>Competition Manager - Competitions</description>
 
@@ -29,7 +29,9 @@
         <swagger-annotations-version>1.5.22</swagger-annotations-version>
         <springfox-version>2.9.2</springfox-version>
         <liquibase-version>4.10.0</liquibase-version>
+             
         <!-- End third party dependencies -->
+             
     </properties>
 
     <dependencies>
