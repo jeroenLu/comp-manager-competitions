@@ -11,8 +11,12 @@
     <groupId>com.jeroenluers</groupId>
     <artifactId>comp-manager-competitions</artifactId>
     <version>0.0.10</version>
-    <name>comp-manager-competitions</name>
+    <name>competition-management</name>
     <description>Competition Manager - Competitions</description>
+
+    <scm>
+        <tag>comp-manager</tag>
+    </scm>
 
     <properties>
         <java.version>11</java.version>
