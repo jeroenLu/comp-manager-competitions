@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.jeroenluers</groupId>
-    <artifactId>comp-manager-competitions</artifactId>
+    <artifactId>competition-management</artifactId>
     <version>0.0.12</version>
-    <name>comp-manager-competitions</name>
+    <name>competition-management</name>
     <description>Competition Manager - Competitions</description>
 
     <scm>
